@@ -1,0 +1,23 @@
+.navigation {
+
+    &__list {
+        list-style-type: none;
+        display: flex;
+        width: 100%;
+    }
+
+    &__item {
+        width: 15%;
+        text-align: center;
+        margin: auto;
+
+        &:nth-child(3n) {
+            width: 40%;
+        }
+    }
+
+    &__image {
+        text-decoration: none;
+        width: 4.8rem;
+    }
+}
