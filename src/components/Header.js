@@ -9,17 +9,17 @@ export default function Header() {
     return (
         <header className="header">
                 <ul className="header__list">
-                    <li className="header__item">faq</li>
-                    <li className="header__item">How Reel Works</li>
-                    <li className="header__item">Profile</li>
+                    <li className="header__item"><a href="#">faq</a></li>
+                    <li className="header__item"><a href="#">how reel works</a></li>
+                    <li className="header__item"><a href="#">profile</a></li>
                 </ul>
                 <nav className="navigation">
                     <ul className="navigation__list">
-                        <li className="navigation__item"><img src={menu} className="navigation__image" /></li>
-                        <li className="navigation__item"><img src={search} className="navigation__image" /></li>
-                        <li className="navigation__item"><img src={reel} className="navigation__image" /></li>
-                        <li className="navigation__item"><img src={star} className="navigation__image" /></li>
-                        <li className="navigation__item"><img src={myreels} className="navigation__image" /></li>
+                        <li className="navigation__item"><a href="#"><img src={menu} className="navigation__image" alt="menu"/></a></li>
+                        <li className="navigation__item"><a href="#"><img src={search} className="navigation__image" alt="search" /></a></li>
+                        <li className="navigation__item"><a href="#"><img src={reel} className="navigation__image" alt="reel" /></a></li>
+                        <li className="navigation__item"><a href="#"><img src={star} className="navigation__image" alt="star" /></a></li>
+                        <li className="navigation__item"><a href="#"><img src={myreels} className="navigation__image" alt="myreels" /></a></li>
                     </ul>
                 </nav>
         </header>

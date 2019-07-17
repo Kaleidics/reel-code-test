@@ -1,0 +1,38 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: .1rem solid $color-grey-3;
+
+    &__list {
+        display: flex;
+        justify-content: space-evenly;
+        height: 4rem;
+        align-items: center;
+        background-color: $color-white-3;
+    }
+
+    &__item {
+        list-style-type: none;
+        width: 2.5rem;
+        height: 2.5rem;
+
+        &:first-of-type {
+            margin-left: 15%;
+        }
+
+        &:last-of-type {
+            margin-right: 15%;
+        }
+    }
+
+    &__link {
+        display: block;
+    }
+
+    &__image {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}

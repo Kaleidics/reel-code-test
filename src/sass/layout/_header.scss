@@ -16,6 +16,11 @@
         font-weight: 700;
         cursor: pointer;
 
+        a, a:visited {
+            text-decoration: none;
+            color: $color-black-1;
+        }
+
         &:first-of-type {
             margin-left: 1rem;
         }
