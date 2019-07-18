@@ -4,6 +4,8 @@
     left: 0;
     width: 100%;
     border-top: .1rem solid $color-grey-3;
+    border-bottom: $wrapper-border;
+    padding: 1rem 0;
 
     &__list {
         display: flex;
@@ -11,20 +13,11 @@
         height: 4rem;
         align-items: center;
         background-color: $color-white-3;
+        flex-wrap: wrap;
     }
 
     &__item {
         list-style-type: none;
-        width: 2.5rem;
-        height: 2.5rem;
-
-        &:first-of-type {
-            margin-left: 15%;
-        }
-
-        &:last-of-type {
-            margin-right: 15%;
-        }
     }
 
     &__link {
@@ -34,5 +27,24 @@
     &__image {
         width: 2.5rem;
         height: 2.5rem;
+    }
+
+    &__copyright {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: $color-grey-4;
+        font-size: 1.2rem;
+        line-height: 2.5;
+    }
+
+    &__icon {
+        vertical-align: middle;
+        margin: 0 .5rem;
+    }
+
+    &__geo {
+        display: inline-block;
+        margin: 0 .5rem;
     }
 }
