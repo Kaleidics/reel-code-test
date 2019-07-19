@@ -9,7 +9,7 @@ import us from '../assets/us.png'
 export default function Footer() {
     return (
         <footer className="footer">
-            <ul className="footer__list">
+            <ul className="footer__list u-background-color-white">
                 <li className="footer__item u-margin-left-medium">
                     <a className="footer__link" href="#">
                         <img src={instagram} className="footer__image" alt="instagram" />

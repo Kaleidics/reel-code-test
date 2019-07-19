@@ -1,0 +1,34 @@
+.reel {
+    margin: 4rem 0;
+
+    &:not(:last-child) {
+        border-bottom: .2rem solid $color-primary-purple;
+    }
+
+    &__list {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    &__item {
+        display: inline-block;
+        
+    }
+
+    &__name {
+        display: flex;
+        flex-direction: column;
+        font-weight: 700;
+
+        .product {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: .5rem;
+        }
+    }
+
+    &__image {
+        width: 10rem;
+    }
+}

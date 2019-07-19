@@ -1,18 +1,16 @@
 .footer {
-    position: fixed;
+    // position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     border-top: .1rem solid $color-grey-3;
     border-bottom: $wrapper-border;
-    padding: 1rem 0;
 
     &__list {
         display: flex;
         justify-content: space-evenly;
         height: 4rem;
         align-items: center;
-        background-color: $color-white-3;
         flex-wrap: wrap;
     }
 
@@ -35,7 +33,7 @@
         text-align: center;
         color: $color-grey-4;
         font-size: 1.2rem;
-        line-height: 2.5;
+        line-height: 3;
     }
 
     &__icon {
