@@ -30,12 +30,18 @@ export const seed = [
         name: 'Gucci Shoes', status: 'paused', percentSaved : '55', total: '2000'
     },
     {
-        name: 'Gucci Belt', status: 'paused', percentSaved : '11', total: '2000'
+        name: 'Gucci Socks', status: 'paused', percentSaved : '11', total: '2000'
     },
     {
         name: 'Gold Jewelry', status: 'active', percentSaved : '9', total: '1400'
     },
     {
         name: 'Nike Shoes', status: 'paused', percentSaved : '9', total: '250'
+    },
+    {
+        name: 'LOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOONG NAME', status: 'paused', percentSaved : '9', total: '250'
+    },
+    {
+        name: 'LOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOONG NAME', status: 'paused', percentSaved : '9', total: '250'
     }
 ]
