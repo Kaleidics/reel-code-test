@@ -4,12 +4,12 @@
     width: 100%;
     height: 2.5rem;
     border-radius: 2rem;
-    background: $color-primary-purple;
+    background: linear-gradient(to right, $color-red-1, $color-blue-1);
     text-align: center;
 
     &__bar {
         border-radius: 1rem;
-        width: 90%;
+        // width: 90%;
         height: 100%;
         transition: width;
         transition-duration: 1s;

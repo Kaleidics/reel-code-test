@@ -1,0 +1,15 @@
+.form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2rem;
+    width: 90%;
+    margin: 0 auto;
+     
+    &__input {
+        height: 3.5rem;
+        font-size: 2rem;
+        text-align: center;
+    }
+}

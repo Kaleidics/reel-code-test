@@ -12,7 +12,7 @@ export const seed = [
         name: 'Summer Dress', status: 'active', percentSaved : '0', total: '100'
     },
     {
-        name: 'Summer Sandals', status: 'paused', percentSaved : '45', total: '55'
+        name: 'Summer Sandals', status: 'paused', percentSaved : '50', total: '55'
     },
     {
         name: 'Night Scarf', status: 'active', percentSaved : '100', total: '50'
