@@ -1,6 +1,8 @@
 .reel {
     margin: 4rem 0;
     padding: 3rem 0;
+    animation: fadeIn 1.5s ease-in backwards;
+    // animation-delay: 1s; 
 
     &:not(:last-child) {
         border-bottom: .2rem solid $color-primary-purple;

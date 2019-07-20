@@ -18,7 +18,7 @@ class ReelsContainer extends React.Component {
         console.log("in reelscontainer render", this.props.seedData);
 
         const reels = this.props.seedData.map((reel, index) => {
-            return <Reel data={reel} index={index} key={reel.name} />;
+            return <Reel delay={index/3} data={reel} index={index} key={reel.name} />;
         });
 
         return <div className="reelsContainer">{reels}</div>;

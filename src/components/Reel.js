@@ -6,7 +6,7 @@ export default class Reel extends React.Component {
     render() {
         const reel = this.props.data;
         return (
-            <div className="reel">
+            <div className="reel" style={{animationDelay: `${this.props.delay}s`}}>
                 <ul className="reel__list">
                     <li className="reel__item">
                         <img className="reel__image" src={reelimage} alt="placeholder" />
