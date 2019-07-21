@@ -19,5 +19,11 @@
         text-align: center;
         border: .1rem solid $color-grey-4;
         border-radius: 2.5rem;
+
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 .5rem 2rem rgba($color-secondary-purple, .5);
+        }
     }
 }

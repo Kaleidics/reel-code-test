@@ -32,3 +32,13 @@ I will be using React with Redux for this test. I will be writing the styling us
 2. Building the Progress UI 7/18/19
 - Looked to [Dribbble.com]("https://dribbble.com/shots/6451667-SneakersCrush-App-Redesign") and found a design to use as inspiration.
 - Using a [HeroPattern SVG](https://www.heropatterns.com/) for the progress bar fill instead of plain color.
+
+3. Finishing Up with the Search and Filtering functionality 7/20/2019
+- All the functional requirements for the code test are there: sort table based on the object fields, searching to find a specific item in the array by name
+- I did a mobile first design as required by the assignment. I started in the iPhone 5/SE viewport and just adjusted the container's width as we size up to desktop.
+- The filtering by object fields is with the `sort()` written in ES6 syntax. I referenced [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) for this implementation.
+- The search functionality uses the `filter()` and `includes()` methods to implement the search. It basically takes an input then checks if the array contains the input string. I had done something similar before in an app.
+- I tried to use redux as much as possible, but I had very sparingly use cases for it. There were not every opportunities or needs to use a global state. The actions, reducers, and stores are there and they work. I used redux management to store the reels, which from a seed file, which is kind of redundant and roundabout. I also used redux to store the search input string.
+
+## Conclusion
+I wish I had more time to spend on this exercise since I know there is a heavy focus on styling. But unfortunately, I did not have as much time as I wanted this week. I received the test on Saturday evening and only noticed the email on Sunday. But I want to adhere to the one week deadline. Just to provide some perspective, for this exercise, I spent maybe 4-5 hours over the course of three days.
