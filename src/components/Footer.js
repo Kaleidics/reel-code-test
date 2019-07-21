@@ -54,7 +54,7 @@ export default function Footer() {
                 <li className="footer__item"><a className="footer__link" href="https://github.com/Kaleidics/reel-code-test">Blog</a></li>
                 <li className="footer__item"><a className="footer__link" href="https://github.com/Kaleidics/reel-code-test">Contact</a></li>
                 <li className="footer__item"><a className="footer__link" href="https://github.com/Kaleidics/reel-code-test">Coupon & Referral</a></li>
-            </ul> href="https://github.com/Kaleidics/reel-code-test"
+            </ul>
         </footer>
     );
 }

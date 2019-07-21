@@ -1,11 +1,16 @@
 import React from 'react';
+import { connect } from "react-redux";
+
 import menu from '../assets/Menu.png';
 import myreels from '../assets/myreels.png';
 import reel from '../assets/reel.png';
 import search from '../assets/Search.png';
 import star from '../assets/Star.png';
 
-export default function Header() {
+
+class Header extends React.Component {
+
+    render() {
     return (
         <header className="header">
                 <ul className="header__list">
@@ -23,5 +28,11 @@ export default function Header() {
                     </ul>
                 </nav>
         </header>
-    )
+    )}
 }
+
+const mapStateToProps = state => ({
+    seedData: state.seedData
+});
+
+export default connect(mapStateToProps)(Header);

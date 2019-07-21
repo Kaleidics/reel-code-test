@@ -9,11 +9,10 @@ class SearchInput extends React.Component {
     }
 
     render() {
-        console.log(this.props.searchInput);
         return (
             <form className="form" onSubmit={e => e.preventDefault()}>
-                <label htmlFor="search">Search</label>
-                <input id="search" className="form__input" type="search" name="search" placeholder="reels" onChange={ e => this.handleSearch(e.target.value)} />
+                <label className="form__label" htmlFor="search">Search</label>
+                <input id="search" className="form__input" type="search" name="search" onChange={ e => this.handleSearch(e.target.value)} />
             </form>
         );
     }
