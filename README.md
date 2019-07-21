@@ -34,7 +34,7 @@ I will be using React with Redux for this test. I will be writing the styling us
 - Using a [HeroPattern SVG](https://www.heropatterns.com/) for the progress bar fill instead of plain color.
 
 3. Finishing Up with the Search and Filtering functionality 7/20/2019
-- All the functional requirements for the code test are there: sort table based on the object fields, searching to find a specific item in the array by name
+- Most of the functional requirements for the code test are there: sort table based on the object fields, searching to find a specific item in the array by name
 - I did a mobile first design as required by the assignment. I started in the iPhone 5/SE viewport and just adjusted the container's width as we size up to desktop.
 - The filtering by object fields is with the `sort()` written in ES6 syntax. I referenced [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) for this implementation.
 - The search functionality uses the `filter()` and `includes()` methods to implement the search. It basically takes an input then checks if the array contains the input string. I had done something similar before in an app.
