@@ -1,8 +1,8 @@
-# [Reel Code Test]()
+# [Reel Code Test](https://eddiechu-reel-codetest.netlify.com/)
 
 This is the repo for the Reel front end code test.
 
-[Deployed live here]()
+[Deployed live here](https://eddiechu-reel-codetest.netlify.com/)
 
 ## Introduction 
 For this test, I will be using the design of Reel itself as the inspiration. I think that would be more appropriate than creating a completely new design.
