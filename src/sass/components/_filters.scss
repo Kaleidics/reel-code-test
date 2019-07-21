@@ -1,10 +1,21 @@
 .filters {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 1.5rem auto;
 
     &__button {
-
+        min-width: 5rem;
+        height: 2.5rem;
+        border-radius: 2.5rem;
+        background-color: transparent;
+        border: none;
+        display: inline-block;
     }
 
     &__toggle {
-        transform: rotate(90deg);
+        // transform: rotate(-90deg);
+        display: inline-block;
+        font-size: 1.8rem;
     }
 }

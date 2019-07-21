@@ -1,22 +1,24 @@
 import React from 'react';
+import { connect } from "react-redux";
+import FilterButton from "./FilterButton";
+
 
 class Filters extends React.Component {
     render() {
         return (
             <div className="filters">
-                <button className="filters__button">
-                    Name<span className="filters__toggle">&#8249;</span>
-                </button>
-                <button className="filters__button">
-                    Status<span className="filters__toggle">&#8249;</span>
-                </button>
-                <button className="filters__button">
-                    Percent<span className="filters__toggle">&#8249;</span>
-                </button>
-                <button className="filters__button">
-                    Price<span className="filters__toggle">&#8249;</span>
-                </button>
+                <FilterButton option={"Name"}/>
+                <FilterButton option={"Status"}/>
+                <FilterButton option={"Percent"}/>
+                <FilterButton option={"Price"}/>
             </div>
         );
     }
 }
+
+const mapStateToProps = state => ({
+    seedData: state.seedData,
+    searchInput: state.searchInput
+});
+
+export default connect(mapStateToProps)(Filters);

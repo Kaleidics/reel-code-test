@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import SearchInput from './components/SearchInput';
 import ReelsContainer from './components/ReelsContainer';
+import Filters from './components/Filters';
 
 export default class App extends React.Component {
 
@@ -14,6 +15,7 @@ export default class App extends React.Component {
             <Header />
             <main>
                 <SearchInput />
+                <Filters />
                 <ReelsContainer />
             </main>
             <Footer />

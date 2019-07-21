@@ -17,3 +17,13 @@ export const setSearchInputSuccess = searchInput => ({
 export const setSearchInput = searchInput => dispatch => {
     dispatch(setSearchInputSuccess(searchInput));
 }
+
+export const SET_SORTED_DATA_SUCCESS = "SET_SORTED_DATA_SUCCESS";
+export const setSortedDataSuccess = sortedData => ({
+    type: SET_SORTED_DATA_SUCCESS,
+    sortedData
+});
+
+export const setSortedData = sortedData => dispatch => {
+    dispatch(setSortedDataSuccess(sortedData));
+}
