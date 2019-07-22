@@ -34,7 +34,7 @@ export default class Reel extends React.Component {
                         </span>
                     </li>
                     <li className="reel__item">
-                        <button className="btn u-font-size-small" onClick={this.toggleStatus}>{ this.state.status === "active" ? "Pause" : "Paused"}</button>
+                        <button className={`btn u-font-size-small ${this.state.status === "paused" ? "u-make-center u-background-color-white" : ""}`} onClick={this.toggleStatus}>{this.state.status === "paused" ? "Activate" : "Pause"}</button>
                     </li>
                 </ul>
                 <ProgressBar percent={reel.percentSaved} />

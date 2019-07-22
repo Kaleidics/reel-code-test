@@ -12,11 +12,11 @@
         list-style-type: none;
         display: flex;
         justify-content: space-between;
+        position: relative;
     }
 
     &__item {
         display: inline-block;
-        
     }
 
     &__name {
