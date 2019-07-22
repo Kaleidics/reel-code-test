@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { setSortedData } from "../actions/index";
-
+import { sortData } from "../sortingFunction";
 
 class FilterButton extends React.Component {
     constructor(props) {
@@ -12,6 +12,7 @@ class FilterButton extends React.Component {
         }
     }
 
+    //chooses whether or not to sort ascending or descening
     handleSort() {
         if (this.state.sortBy === 0) {
             this.setState({
@@ -29,19 +30,20 @@ class FilterButton extends React.Component {
     }
 
     ascending() {
-        let sortedData = [...this.props.seedData].sort((a, b) => (a.name > b.name ? 1 : -1));
+        let sortedData = sortData([...this.props.seedData], this.props.option);
         this.props.dispatch(setSortedData(sortedData));
     }
 
+    //Since it will be always be sorted ascending first, just reverse to get the descending order
     descending() {
-        let sortedData = [...this.props.seedData].sort((a, b) => (b.name > a.name ? 1 : -1));
+        let sortedData = [...this.props.seedData].reverse();
         this.props.dispatch(setSortedData(sortedData));
     }
 
     render() {
         return (
             <button className="filters__button" onClick={this.handleSort.bind(this)}>
-                {this.props.option} <span className="filters__toggle" style={{transform: this.state.sortBy ? "rotate(-90deg)" : "rotate(90deg)"}}>&#8249;</span>
+                {this.props.optionName} <span className="filters__toggle" style={{transform: this.state.sortBy ? "rotate(-90deg)" : "rotate(90deg)"}}>&#8249;</span>
             </button>
         );
     }

@@ -7,10 +7,10 @@ class Filters extends React.Component {
     render() {
         return (
             <div className="filters">
-                <FilterButton option={"Name"}/>
-                <FilterButton option={"Status"}/>
-                <FilterButton option={"Percent"}/>
-                <FilterButton option={"Price"}/>
+                <FilterButton optionName={"Name"} option={"name"} />
+                <FilterButton optionName={"Status"} option={"status"} />
+                <FilterButton optionName={"Percent"} option={"percentSaved"} />
+                <FilterButton optionName={"Price"} option={"total"} />
             </div>
         );
     }

@@ -24,7 +24,7 @@ export const seed = [
         name: 'Gucci Belt', status: 'active', percentSaved : '33', total: '500'
     },
     {
-        name: 'Gucci Wallet', status: 'paused', percentSaved : '22', total: '2000'
+        name: 'Gucci Wallet', status: 'paused', percentSaved : '22', total: '2001'
     },
     {
         name: 'Gucci Shoes', status: 'paused', percentSaved : '55', total: '2000'
@@ -39,7 +39,7 @@ export const seed = [
         name: 'Nike Shoes', status: 'paused', percentSaved : '9', total: '250'
     },
     {
-        name: 'LOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOONG NAME', status: 'paused', percentSaved : '9', total: '250'
+        name: 'LOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOONG NAME', status: 'paused', percentSaved : '9', total: '2500'
     },
     {
         name: 'LOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOONG NAME', status: 'paused', percentSaved : '9', total: '250'
