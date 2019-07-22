@@ -44,10 +44,10 @@ I will be using React with Redux for this test. I will be writing the styling us
 I wish I had more time to spend on this exercise since I know there is a heavy focus on styling. But unfortunately, I did not have as much time as I wanted this week. I received the test on Saturday evening and only noticed the email on Sunday. But I want to adhere to the one week deadline. Just to provide some perspective, for this exercise, I spent maybe 4-5 hours over the course of three days.
 
 I'll give explanation of my UX/UI implementation. I'm assuming this is some sort of shopping cart, where we DON'T want users to pause their reels.
-So I made the `Pause` button have a muted color like grey, to try to hide it, or make less noticable while stilling being accessible visually. Then when a user does pause a `reel`, it creates a colorful overlay on the pause item. I did because we want to draw a user's attention to a `paused reel` as opposed to an active reel, which we do not want the user to change the status of.
+So I made the `Pause` button have a muted color like grey, to try to hide it and a warning red hover state. Then when a user does pause a `reel`, it creates a colorful overlay on the pause item. I did because we want to draw a user's attention to a `paused reel` as opposed to an active reel, which we do not want the user to change the status of. Hovering the `activate` state of the button doesn't trigger a hover state because we don't want to trigger a warning. Another feature to add would possibly a `Are you sure you want to pause? Modal`, when a user clicks pause. This is to prompt a second chance for the reel not to be paused.
 
 Some limitations:
 - The first sort of array by the `name` field, will not re-render a specific instance of a `reel` if its position in the array did not change.
 - I implemented arrows which flip when clicked to indicate ascending or descending sorting order, but if you mix and match different sorting fields `name`, `status`, the arrows dont reflect the correct ascending or descending order
-
+- Possibly overusing ternary operations to control styles of components depending on state: `button`, `overlay` mainly.
 
