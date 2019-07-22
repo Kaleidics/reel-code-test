@@ -38,7 +38,16 @@ I will be using React with Redux for this test. I will be writing the styling us
 - I did a mobile first design as required by the assignment. I started in the iPhone 5/SE viewport and just adjusted the container's width as we size up to desktop.
 - The filtering by object fields is with the `sort()` written in ES6 syntax. I referenced [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) for this implementation.
 - The search functionality uses the `filter()` and `includes()` methods to implement the search. It basically takes an input then checks if the array contains the input string. I had done something similar before in an app.
-- I tried to use redux as much as possible, but I had very sparingly use cases for it. There were not every opportunities or needs to use a global state. The actions, reducers, and stores are there and they work. I used redux management to store the reels, which from a seed file, which is kind of redundant and roundabout. I also used redux to store the search input string.
+- I tried to use redux as much as possible, but I had very sparingly use cases for it. There were not every opportunities or needs to use a global state. The actions, reducers, and stores are there and they work. I used redux management to store the reels, which come from a seed file, which is kind of redundant and roundabout. I also used redux to store the search input string.
 
 ## Conclusion
 I wish I had more time to spend on this exercise since I know there is a heavy focus on styling. But unfortunately, I did not have as much time as I wanted this week. I received the test on Saturday evening and only noticed the email on Sunday. But I want to adhere to the one week deadline. Just to provide some perspective, for this exercise, I spent maybe 4-5 hours over the course of three days.
+
+I'll give explanation of my UX/UI implementation. I'm assuming this is some sort of shopping cart, where we DON'T want users to pause their reels.
+So I made the `Pause` button have a muted color like grey, to try to hide it, or make less noticable while stilling being accessible visually. Then when a user does pause a `reel`, it creates a colorful overlay on the pause item. I did because we want to draw a user's attention to a `paused reel` as opposed to an active reel, which we do not want the user to change the status of.
+
+Some limitations:
+- The first sort of array by the `name` field, will not re-render a specific instance of a `reel` if its position in the array did not change.
+- I implemented arrows which flip when clicked to indicate ascending or descending sorting order, but if you mix and match different sorting fields `name`, `status`, the arrows dont reflect the correct ascending or descending order
+
+
