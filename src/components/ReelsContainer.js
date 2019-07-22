@@ -32,7 +32,7 @@ class ReelsContainer extends React.Component {
 
         //delay to used to set an animation second property for the styles component
         const reels = rawData.map((reel, index) => {
-            return <Reel delay={index/8} data={reel} index={index} key={reel.name} />;
+            return <Reel delay={index/8} data={reel} index={index} key={reel.name} status={reel.status} />;
         });
 
         return <div className="reelsContainer">{ reels }</div>;

@@ -3,6 +3,22 @@ import reelimage from '../assets/reelimage.jpg';
 import ProgressBar from './ProgressBar';
 
 export default class Reel extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            status: this.props.status
+        }
+
+        this.toggleStatus = this.toggleStatus.bind(this);
+    }
+
+    toggleStatus() {
+        this.setState({
+            status: this.state.status === "active" ? "paused" : "active"
+        });
+    }
+
     render() {
         const reel = this.props.data;
         return (
@@ -18,11 +34,11 @@ export default class Reel extends React.Component {
                         </span>
                     </li>
                     <li className="reel__item">
-                        <button className="btn u-font-size-small">Pause</button>
+                        <button className="btn u-font-size-small" onClick={this.toggleStatus}>{ this.state.status === "active" ? "Pause" : "Paused"}</button>
                     </li>
                 </ul>
                 <ProgressBar percent={reel.percentSaved} />
-                <div className="reel__overlay"></div>
+                <div className={ this.state.status === "active" ? "" : "reel__overlay"}></div>
             </div>
         );
     }

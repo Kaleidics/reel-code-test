@@ -40,10 +40,11 @@
         width: 102%;
         height: 100%;
         left: -1%;
-        top: 10%;
+        top: 5%;
         border-radius: 1rem;
         background: linear-gradient(to right, $color-red-1, $color-blue-1);
         opacity: .7;
         margin: 0 auto;
+        transition: all 1s;
     }
 }
