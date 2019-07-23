@@ -14,7 +14,7 @@ class ReelsContainer extends React.Component {
     }
 
     render() {
-
+        console.log('2', this.props.seedData)
         let rawData = [...this.props.seedData];
 
         //If user enters input, filter the array of reeels and display all values that include the string input

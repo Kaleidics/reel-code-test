@@ -27,3 +27,23 @@ export const setSortedDataSuccess = sortedData => ({
 export const setSortedData = sortedData => dispatch => {
     dispatch(setSortedDataSuccess(sortedData));
 }
+
+export const CHANGE_REEL_STATUS_SUCCESS = "CHANGE_REEL_STATUS_SUCCESS";
+export const changeReelStatusSuccess = updatedArray => ({
+    type: CHANGE_REEL_STATUS_SUCCESS,
+    updatedArray
+});
+
+export const changeReelStatus = (currentArray, reel, status) => dispatch => {
+
+    console.log("before", currentArray)
+    let updatedArray = currentArray;
+    for (let i = 0; i < updatedArray.length; i++ ) {
+        if (updatedArray[i].name === reel) {
+            console.log('updated', updatedArray[i])
+            updatedArray[i].status = status
+        }
+    }
+    console.log('action array', updatedArray)
+    dispatch(changeReelStatusSuccess([...updatedArray]));
+}
