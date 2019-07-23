@@ -20,6 +20,37 @@ The live demo is made with the following tech-stack and methodologies.
 
 I will be using React with Redux for this test. I will be writing the styling using SASS with the SCSS syntax. The class naming convention will be based on the Block-element-modifier methodology. The folder structure for the SASS files will be based on the SASS 7-1 pattern and include what is necessary.
 
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development purposes.
+
+### Prerequisites
+
+What things you need to install the software and how to install them
+
+- [npm](https://www.npmjs.com/get-npm)
+
+
+### Installing
+
+1. Clone or fork the repo
+
+```
+git clone https://github.com/Kaleidics/reel-code-test.git
+```
+
+2. Run npm install inside project root directory
+
+```
+npm install
+```
+3. Run npm start to start the project on localhost:3000
+
+```
+npm start
+```
+4. Go to localhost:3000 in your browser
+
 ## Development Process
 
 1. Getting Started 7/15/19
